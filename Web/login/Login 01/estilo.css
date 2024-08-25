@@ -36,24 +36,30 @@ section {
     margin: 10px;
 }
 
-.contenedor textarea{
+.contenedor textarea {
     margin: 0px 0px 0px 33px;
     border-radius: 6px;
     background-color: transparent;
-    color: #fff;
+    color: rgb(112, 214, 255);
     border-color: #fff;
 }
-.contenedor textarea::placeholder{
+
+.contenedor textarea::placeholder {
     color: #fff;
     font-weight: bold;
 }
+
 .subtitulos{
     font-weight: bold;
     color: #fff;
     margin: 0px 10px 0px 35px;
     font-size: 1rem;
 }
-.sexo{
+input[type="radio"]:checked {
+    accent-color: rgb(112, 214, 255);
+}
+
+.sexo {
     color: #fff;
     font-weight: bold;
 }
@@ -84,7 +90,7 @@ section {
     top: -5px;
     left: 10px;
     font-size: 20px;
-    color: #4b4b4b;
+    color: rgb(112, 214, 255);
 }
 
 .input-contenedor input {
@@ -94,7 +100,7 @@ section {
     border: none;
     outline: none;
     font-size: 1rem;
-    color: #fff
+    color: rgb(112, 214, 255);
 }
 
 .input-contenedor span {
@@ -105,13 +111,18 @@ section {
     right: 8px;
 }
 
+.input-contenedor input:focus~span,
+.input-contenedor input:valid~span {
+    color: rgb(112, 214, 255);
+}
+
 button {
     position: relative;
     margin: 10px 20px 20px 25px;
     width: 90%;
     height: 45px;
     border-radius: 20px;
-    background: #817f7f;
+    background: rgb(112, 214, 255);
     border: none;
     font-weight: bold;
     cursor: pointer;
