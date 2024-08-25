@@ -16,14 +16,12 @@
             isset($_SESSION["Apellidos"])&&
             isset($_SESSION["email"])&&
             isset($_SESSION["Genero"])&&
-            isset($_SESSION["Poblacion"])&&
             isset($_SESSION["descripcion"])
         ){
             echo "<p><strong>Nombres:</strong>".$_SESSION["nombres"]."</p>";
             echo "<p><strong>Aoellidos:</strong>".$_SESSION["Apellidos"]."</p>";
             echo "<p><strong>Correo Electronico:</strong>".$_SESSION["email"]."</p>";
             echo "<p><strong>Genero:</strong>".$_SESSION["Genero"]."</p>";
-            echo "<p><strong>Poblacion:</strong>".$_SESSION["poblacion"]."</p>";
             echo "<p><strong>Descripcion:</strong>".$_SESSION["descripcion"]."</p>";
             session_unset();
             session_destroy();
