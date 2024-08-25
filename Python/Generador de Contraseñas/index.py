@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash
 contenido=string.ascii_letters + string.digits + string.punctuation
 
 #Longuitud de la contraseña
-tamano=int(input("Ingresar el Tamaño de la contraseña"))
+tamano=int(input("Ingresar el Tamaño de la contraseña: "))
 
 #Bucle para generar Contraseñas
 for _ in range(1):
