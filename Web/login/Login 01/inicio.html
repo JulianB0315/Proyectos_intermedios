@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon">
+    <title>Registro</title>
+</head>
+
+<body>
+    <section>
+        <div class="contenedor">
+            <form action="./informacion.php" method="post">
+                <h1>Formulario de Registro:</h1>
+                <div class="input-contenedor">
+                    <input type="text" id="nombres" name="nombres" required minlength="2" maxlength="50"
+                        placeholder="Ingresa tus Nombres">
+                    <label for="nombres">Nombres:</label>
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <br>
+                </div>
+                <div class="input-contenedor">
+                    <input type="text" id="Apellidos" name="Apellidos" required minlength="2" maxlength="50"
+                        placeholder="Ingresa tus Apellidos">
+                    <label for="Apellidos">Apellidos:</label>
+                    <br>
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+                <div class="input-contenedor">
+                    <input type="email" id="email" name="email" required placeholder="nombre@gamil.com">
+                    <label for="email">Correo Email:</label>
+                    <br>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </div>
+                <div class="input-contenedor2">
+                    <label for="Genero">Genero:</label>
+                    <label for="Masculino">Masculino</label>
+                    <input type="Radio" id="Masculino" name="Genero[]" value="Masculino">
+                    <label for="Femenino">Femenino</label>
+                    <input type="Radio" id="Femenino" name="Genero[]" value="femenino">
+                    <br><br>
+                    <br><br>
+                </div>
+                <label for="poblacion">Poblacion:</label>
+                <select name="poblacion" id="poblacion">
+                    <option disabled selected>Selecionar:</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Seviolla">Seviolla</option>
+                    <option value="Valencia">Valencia</option>
+                </select>
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" id="descripcion" cols="70" rows="2"
+                    placeholder="Descripcion personal"></textarea>
+                <br>
+                <input type="checkbox" name="novedades" id="novedades" value="si"><label for="">Deseo recibir
+                    informacion sobre novedades y ofertas.</label><br>
+                <input type="checkbox" name="novedades" id="novedades" value="si"><label for="">Declaro haber leido
+                    y acepto las condiciones generales del programa y normativa sobre proteccion de datos.</label>
+                <button type="submit">Enviar</button>
+            </form>
+    </section>
+    </div>
+</body>
+
+</html>
