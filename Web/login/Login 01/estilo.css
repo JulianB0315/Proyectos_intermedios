@@ -36,6 +36,28 @@ section {
     margin: 10px;
 }
 
+.contenedor textarea{
+    margin: 0px 0px 0px 33px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+.contenedor textarea::placeholder{
+    color: #fff;
+    font-weight: bold;
+}
+.subtitulos{
+    font-weight: bold;
+    color: #fff;
+    margin: 0px 10px 0px 35px;
+    font-size: 1rem;
+}
+.sexo{
+    color: #fff;
+    font-weight: bold;
+}
+
 .input-contenedor {
     padding-top: 10px;
     padding-left: 50px;
@@ -57,12 +79,12 @@ section {
     font-weight: bold;
 }
 
-input:focus~label,
-input:valid~label {
+.input-contenedor input:focus~label,
+.input-contenedor input:valid~label {
     top: -5px;
     left: 10px;
     font-size: 20px;
-    color: #e90606;
+    color: #4b4b4b;
 }
 
 .input-contenedor input {
@@ -85,9 +107,9 @@ input:valid~label {
 
 button {
     position: relative;
-    margin: 20px;
-    width: 80%;
-    height: 35px;
+    margin: 10px 20px 20px 25px;
+    width: 90%;
+    height: 45px;
     border-radius: 20px;
     background: #817f7f;
     border: none;
