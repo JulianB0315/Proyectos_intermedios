@@ -43,22 +43,17 @@
                     </span>
                 </div>
                 <br>
-                Genero
-                <input type="Radio" id="Masculino" name="Genero[]" value="Masculino">Masculino
-                <input type="Radio" id="Femenino" name="Genero[]" value="femenino">Femenino
+                <label class="subtitulos" for="Genero">Genero:</label>
+                <input type="Radio" id="Masculino" name="Genero[]" value="Masculino">
+                <label class="sexo" for="">Masculino</label>
+                <input type="Radio" id="Femenino" name="Genero[]" value="Femenino">
+                <label class="sexo" for="">Femenino</label>
+                <input type="Radio" id="Otros" name="Genero[]" value="Otros">
+                <label class="sexo" for="">Otros</label>
+                <br><br>
+                <label class="subtitulos" for="descripcion">Descripcion:</label>
                 <br>
-                poblacion
-                <select name="poblacion" id="poblacion">
-                    <option disabled selected>Selecionar:</option>
-                    <option value="Alicante">Alicante</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Seviolla">Seviolla</option>
-                    <option value="Valencia">Valencia</option>
-                </select>
-                <br>
-                Descripcion
-                <br>
-                <textarea name="descripcion" id="descripcion" cols="70" rows="2"
+                <textarea name="descripcion" id="descripcion" cols="70" rows="3"
                 placeholder="Descripcion personal"></textarea>
                 <button type="submit">Enviar</button>
             </form>
