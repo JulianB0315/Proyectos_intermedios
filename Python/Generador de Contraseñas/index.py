@@ -1,20 +1,16 @@
 import random
+import string
 from werkzeug.security import generate_password_hash
 
-#Caracteres que se van usar
-abc="abcdefghijklmnopqrstuvwyz"
-Manusabc=abc.upper()
-numeros="0123456789"
-simbolos="@{}[]*,:;?¿#$%&/()!=+-"
+contenido=string.ascii_letters + string.digits + string.punctuation
 
-union= abc+Manusabc+numeros+simbolos
 #Longuitud de la contraseña
-tamano=8
+tamano=int(input("Ingresar el Tamaño de la contraseña"))
 
-#Bucle para genterar Contrasñas
-for _ in range(10):
-    nuestra=random.sample(union, tamano)
+#Bucle para generar Contraseñas
+for _ in range(1):
+    nuestra=random.sample(contenido, tamano)
     password="".join(nuestra)
     password_encriptado=generate_password_hash(password)
-    print("Contraseñas==> {} Encriptado==>{}".format(password,password_encriptado))
+    print("Contraseñas==> {} ||   Encriptado==> {}".format(password,password_encriptado))
     print("---------------------------------------------------------------------")
