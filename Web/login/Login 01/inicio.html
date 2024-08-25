@@ -19,7 +19,7 @@
                 <div class="input-contenedor">
                     <input type="text" id="nombres" name="nombres" required minlength="2" maxlength="50"
                         placeholder="Ingresa tus Nombres">
-                    <label for="nombres">Nombres:</label>
+                    <label for="Apellidos">Nombres:</label>
                     <span class="material-symbols-outlined">
                         person
                     </span>
@@ -36,22 +36,18 @@
                 </div>
                 <div class="input-contenedor">
                     <input type="email" id="email" name="email" required placeholder="nombre@gamil.com">
-                    <label for="email">Correo Email:</label>
+                    <label for="email">Correo:</label>
                     <br>
                     <span class="material-symbols-outlined">
                         mail
                     </span>
                 </div>
-                <div class="input-contenedor2">
-                    <label for="Genero">Genero:</label>
-                    <label for="Masculino">Masculino</label>
-                    <input type="Radio" id="Masculino" name="Genero[]" value="Masculino">
-                    <label for="Femenino">Femenino</label>
-                    <input type="Radio" id="Femenino" name="Genero[]" value="femenino">
-                    <br><br>
-                    <br><br>
-                </div>
-                <label for="poblacion">Poblacion:</label>
+                <br>
+                Genero
+                <input type="Radio" id="Masculino" name="Genero[]" value="Masculino">Masculino
+                <input type="Radio" id="Femenino" name="Genero[]" value="femenino">Femenino
+                <br>
+                poblacion
                 <select name="poblacion" id="poblacion">
                     <option disabled selected>Selecionar:</option>
                     <option value="Alicante">Alicante</option>
@@ -59,18 +55,15 @@
                     <option value="Seviolla">Seviolla</option>
                     <option value="Valencia">Valencia</option>
                 </select>
-                <label for="descripcion">Descripcion:</label>
-                <textarea name="descripcion" id="descripcion" cols="70" rows="2"
-                    placeholder="Descripcion personal"></textarea>
                 <br>
-                <input type="checkbox" name="novedades" id="novedades" value="si"><label for="">Deseo recibir
-                    informacion sobre novedades y ofertas.</label><br>
-                <input type="checkbox" name="novedades" id="novedades" value="si"><label for="">Declaro haber leido
-                    y acepto las condiciones generales del programa y normativa sobre proteccion de datos.</label>
+                Descripcion
+                <br>
+                <textarea name="descripcion" id="descripcion" cols="70" rows="2"
+                placeholder="Descripcion personal"></textarea>
                 <button type="submit">Enviar</button>
             </form>
+        </div>
     </section>
-    </div>
 </body>
 
 </html>
